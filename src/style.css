@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+.window{
+  @apply p-8 bg-[#1a2b1a];
+}
+
+.home{
+  @apply flex ;
+}
+
+.aparts{
+  @apply p-[10px] flex flex-col gap-[30px]
+}
