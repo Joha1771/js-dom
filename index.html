@@ -2,169 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dom</title>
-    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <section class=" flex items-center justify-center pt-[50px]">
-        <div class="container mx-auto px-[10px] flex items-center justify-center gap-[100px]">
-    <div class="svetofor flex flex-col gap-[10px] justify-center items-center pb-[32px]">
-        <h2 class="bg-[gray] px-[50px] text-[white]">Svetofor</h2>
-        <div class="flex gap-[20px]">
-      <button class="sf-btn cursor-pointer bg-[#25d725] rounded-4xl px-[20px] text-[#ebeb3e]">Start</button>
-      <button class="sf-stop-btn cursor-pointer bg-[#f90f0f] rounded-4xl px-[20px] text-[#73bfe8]">Stop</button>
+
+    <section class="flex items-center justify-center pt-[50px]">
+      <div class="container mx-auto px-[10px] flex gap-[100px]">
+
+        <div class="svetofor flex flex-col gap-[10px] items-center">
+          <h2 class="bg-gray-500 px-[50px] text-white">Svetofor</h2>
+          <div class="flex gap-[20px]">
+            <button class="px-5 bg-green-500 rounded sf-btn">Start</button>
+            <button class="px-5 bg-red-500 rounded sf-stop-btn">Stop</button>
+          </div>
+        </div>
+
+        <div class="secundomer flex flex-col gap-[10px] items-center">
+          <h2 class="bg-gray-500 px-[70px] text-white">Timer</h2>
+          <div class="flex gap-[20px]">
+            <button class="px-5 bg-green-500 rounded sk-btn">Start</button>
+            <button class="px-5 bg-red-500 rounded sk-stop-btn">Stop</button>
+          </div>
+          <p class="counter">0</p>
+        </div>
+
+        <div class="timer flex flex-col gap-[10px] items-center">
+          <h2 class="bg-gray-500 px-[70px] text-white">Time</h2>
+          <div class="flex gap-[20px]">
+            <button class="px-5 bg-green-500 rounded ph-btn">Start</button>
+            <button class="px-5 bg-red-500 rounded ph-stop-btn">Stop</button>
+          </div>
+          <p>
+            <span class="hour">00</span>:
+            <span class="minutes">00</span>:
+            <span class="second">00</span>
+          </p>
+        </div>
+
       </div>
-    </div>
-    <div class="secundomer flex flex-col gap-[10px] items-center">
-        <h2 class="bg-[gray] px-[70px] text-[white]">Timer</h2>
-        <div class="flex gap-[20px]">
-      <button class="sk-btn cursor-pointer bg-[#25d725] rounded-4xl px-[20px] text-[#ebeb3e]">Start</button>
-      <button class="sk-stop-btn cursor-pointer bg-[#f90f0f] rounded-4xl px-[20px] text-[#73bfe8]">Stop</button>
-    </div>
-    <p>0</p>
-    </div>
-    <div class="timer flex flex-col gap-[10px] items-center">
-        <h2 class="bg-[gray] px-[70px] text-[white]">Time</h2>
-        <div class="flex gap-[20px]">
-      <button class="ph-btn cursor-pointer bg-[#25d725] rounded-4xl px-[20px] text-[#ebeb3e]">Start</button>
-      <button class="ph-stop-btn cursor-pointer bg-[#f90f0f] rounded-4xl px-[20px] text-[#73bfe8]">Stop</button>
-    </div>
-    <p>
-      <span class="hour">00</span>:<span class="minutes">00</span>:<span
-        class="second"
-        >00</span
-      >
-    </p>
-    </div>
-    </div>
     </section>
-    <section class="flex items-center justify-center pt-[150px] pb-[50px] text-[#ffffff]">
-    <div class="bg-[url('/public/bg-image.png')] bg-no-repeat container mx-auto  max-w-[1200px] flex  items-center justify-center pb-[50px] relative">
-        <div class="absolute top-10 ">
-            <h2 class="justify-center text-center text-2xl font-bold ">Joha City</h2>
-            <button class="bg-[gray] px-[20px] windowColor">ON</button>
-            <button class="bg-[#d38e1f] px-[20px] window-off-Color">OFF</button>
+
+    <section class="flex justify-center pt-[150px] text-white">
+      <div class="relative bg-no-repeat bg-[url('/bg-image.png')] w-[1200px] h-[500px]">
+
+        <div class="absolute text-center -translate-x-1/2 top-10 left-1/2">
+          <h2 class="text-2xl font-bold">Joha City</h2>
+          <button class="px-5 bg-gray-500 window-on">ON</button>
+          <button class="px-5 bg-orange-500 window-off">OFF</button>
         </div>
-            <div class="home mt-[200px] bg-[gray] mr-[20px]">
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
-            <div class="home pt-[80px]  bg-[gray]">
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts ">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
-            <div class="home mt-[410px] bg-[gray]" >
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
-            <div class="home mt-[315px] bg-[gray] ml-[30px]">
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
-            <div class="home mt-[315px] bg-[gray] ml-[30px]">
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
-            <div class="home mt-[315px] bg-[gray] ml-[30px] pb-[20px]">
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-                <div class="aparts">
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                    <div class="window"></div>
-                </div>
-            </div>
 
-
-    </div>
+      </div>
     </section>
 
-    <section class="flex items-center justify-center pt-[100px] pb-[50px] ">
-        <div class="container max-auto  max-w-[1200px] flex  items-center justify-center pb-[50px] relative flex flex-col gap-[50px]">
-            <div class="flex gap-[80px]">
-            <h2 class="text-3xl font-bold">Press o start</h2>
-            <button class="car-btn cursor-pointer text-3xl font-medium bg-[#67b567] text-white px-[40px] rounded-2xl">Start</button>
-            </div>
-            <div class=" ">
-            <img src="./public/fon.jpg" alt="" class="w-[1200px]" >
-            </div>
-            <div class="absolute left-[120px] pb-[20px] bottom-[75px]">
-                <div class="redd ">
-                <img src="./public/red-car.png" alt="" class="w-[100px] ">
-                </div>
-                <div class="orangee">
-                <img src="./public/orange-car.jpg" alt="" class="w-[100px] ">
-                </div>
-            </div>
+    <section class="flex justify-center pt-[100px]">
+      <div class="relative w-[1200px]">
+
+        <div class="flex gap-10 mb-5">
+          <h2 class="text-3xl font-bold">Press to start</h2>
+          <button class="px-10 text-2xl text-white bg-green-600 rounded car-btn">
+            Start
+          </button>
         </div>
+
+        <img src="/fon.jpg" class="w-full" />
+
+        <div class="absolute bottom-[50px] left-[100px] flex gap-10">
+          <img src="/red-car.png" class="w-[100px] red-car" />
+          <img src="/orange-car.jpg" class="w-[100px] orange-car" />
+        </div>
+
+      </div>
     </section>
-    <script src="./index.js"></script>
+
+    <!-- ВАЖНО -->
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
